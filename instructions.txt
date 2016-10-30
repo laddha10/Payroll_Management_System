@@ -1,7 +1,8 @@
 --- first Import the payroll.sql file in your database.
 then import the mysql-connector-java-5.0.8.jar driver file which is  provided in the project.
+change the login information in dbInfo.java file in connection method according to your system.
 
-run file "login.java" and login with username and password provided in database.
+run file "login.java" and login with username and password provided in database table login.
 for example
 admin panel
 

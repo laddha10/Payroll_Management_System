@@ -237,10 +237,12 @@ public class AddNewEmployee extends JFrame {
 				{
 				Connection con= DBInfo.getConn();
 				String str=" insert into employee values (?,?,?,?,?,?,?,?,?,?,?,?)";
+				String str1="insert into login values (?,?,?)";
 				int flag=0;
 				try
 				{
 					PreparedStatement ps=con.prepareStatement(str);
+					PreparedStatement ps1=con.prepareStatement(str1);
 					ps.setString(1, s1);
 					ps.setString(2, s2);
 					ps.setString(3, s3);
@@ -254,6 +256,10 @@ public class AddNewEmployee extends JFrame {
 					ps.setString(11, s11);
 					ps.setString(12, s12);
 					flag = ps.executeUpdate();
+					ps1.setString(1, s11);
+					ps1.setString(2, s12);
+					ps1.setString(3, "faculty");
+					ps1.executeUpdate();
 					
 				}
 				catch (Exception e1)

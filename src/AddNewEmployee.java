@@ -265,8 +265,6 @@ public class AddNewEmployee extends JFrame {
 				catch (Exception e1)
 				{
 					e1.printStackTrace();
-					e1.printStackTrace();
-					e1.printStackTrace();
 				}
 				if (flag==0)
 				{

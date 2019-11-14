@@ -46,6 +46,11 @@ public class AddNewEmployee extends JFrame {
 				{
 					AddNewEmployee frame = new AddNewEmployee();
 					frame.setVisible(true);
+					int target = -5;
+int num = 3;
+
+target =- num;  // Noncompliant; target = -3. Is that really what's meant?
+target =+ num;
 				} 
 				catch (Exception e) 
 				{

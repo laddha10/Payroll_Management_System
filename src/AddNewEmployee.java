@@ -46,6 +46,7 @@ public class AddNewEmployee extends JFrame {
 				{
 					AddNewEmployee frame = new AddNewEmployee();
 					frame.setVisible(true);
+					throw new NullPointerException();
 				} 
 				catch (Exception e) 
 				{
